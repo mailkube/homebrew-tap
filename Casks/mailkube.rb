@@ -6,23 +6,22 @@ cask "mailkube" do
     end
   end
 
-  version "1.1.6"
+  version "1.1.7"
 
   on_macos do
     on_arm do
-      sha256 "6cc615b974f6e7dbd68565e17b179900c530791524c32a7243da77d7296f9830"
+      sha256 "4d1c57eb2290666d84cc3981ab5bc96256e57da37f5d66455060172784387410"
       url "https://github.com/mailkube/mailkube-cli/releases/download/v#{version}/mailkube_#{version}_darwin_arm64.tar.gz"
     end
   end
-
   on_linux do
-    on_intel do
-      sha256 "44dd9d20cd79f02c823f470f11a1d129182702ee5030fdc7a42292ba82885ae8"
-      url "https://github.com/mailkube/mailkube-cli/releases/download/v#{version}/mailkube_#{version}_linux_amd64.tar.gz"
-    end
     on_arm do
-      sha256 "051735824349a80cd4f93bf92b0a321b9946a25738cecc9fc5ac4cd08fb63bce"
+      sha256 "263b3ef80a98c12e6aa17f153a1a0ee61d46732975c05186e60d3040d24a69a2"
       url "https://github.com/mailkube/mailkube-cli/releases/download/v#{version}/mailkube_#{version}_linux_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "b5058efe1f4c26e45fcfd6ef2f3c2a37d11dff60b868d81e60094b2b74df998a"
+      url "https://github.com/mailkube/mailkube-cli/releases/download/v#{version}/mailkube_#{version}_linux_amd64.tar.gz"
     end
   end
 
@@ -46,5 +45,4 @@ cask "mailkube" do
   end
 
   # No zap stanza required
-
 end
